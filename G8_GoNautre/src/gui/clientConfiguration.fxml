@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../resources/projectTheme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="headerLabel" layoutX="152.0" layoutY="40.0" text="Client Connection Set Up" />
+      <Label layoutX="82.0" layoutY="115.0" text="Server ip/hostname:" />
+      <Label layoutX="82.0" layoutY="164.0" text="Port:" />
+      <JFXTextField fx:id="ipTextField" layoutX="246.0" layoutY="110.0" text="127.0.0.1" />
+      <JFXTextField fx:id="portTextField" layoutX="246.0" layoutY="159.0" text="5555" />
+      <JFXButton fx:id="connectButton" layoutX="226.0" layoutY="224.0" onMouseClicked="#connectButtonClick" prefHeight="40.0" prefWidth="131.0" text="Connect">
+         <graphic>
+            <Circle fx:id="circleStatus" fill="RED" radius="13.0" stroke="BLACK" strokeType="INSIDE" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="startAppBtn" layoutX="226.0" layoutY="333.0" onMouseClicked="#loadApp" prefHeight="39.0" prefWidth="131.0" text="Start App" />
+   </children>
+</AnchorPane>

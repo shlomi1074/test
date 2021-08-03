@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" stylesheets="@../resources/projectTheme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Line disable="true" endX="120.0" layoutX="326.0" layoutY="101.0" startX="-175.0" stroke="#d9d9d9" strokeWidth="0.7" />
+      <Label layoutX="154.0" layoutY="114.0" style="-fx-text-fill: #7FED9D;" text="Visit Info:" />
+      <Label layoutX="210.0" layoutY="156.0" text="Park:" />
+      <Label layoutX="210.0" layoutY="186.0" text="Date:" />
+      <Label layoutX="210.0" layoutY="246.0" text="Type:" />
+      <Label layoutX="210.0" layoutY="216.0" text="Time:" />
+      <Line disable="true" endX="120.0" layoutX="326.0" layoutY="145.0" startX="-175.0" stroke="#d9d9d9" strokeWidth="0.7" />
+      <Line disable="true" endX="120.0" layoutX="323.0" layoutY="316.0" startX="-175.0" stroke="#d9d9d9" strokeWidth="0.7" />
+      <Label fx:id="summaryPark" layoutX="313.0" layoutY="156.0" text="linda park" />
+      <Label fx:id="summaryDate" layoutX="313.0" layoutY="186.0" text="2020-12-12" />
+      <Label fx:id="summaryTime" layoutX="313.0" layoutY="216.0" text="14:30" />
+      <Label fx:id="summaryType" layoutX="313.0" layoutY="246.0" text="Solo Visit" />
+      <Label layoutX="210.0" layoutY="276.0" text="Visitors:" />
+      <Label fx:id="summaryVisitors" layoutX="313.0" layoutY="276.0" text="1" />
+      <Label layoutX="228.0" layoutY="331.0" style="-fx-text-fill: #7FED9D;" text="Total Price:" />
+      <Label fx:id="totalPriceLabel" layoutX="309.0" layoutY="331.0" text="950.0" />
+      <JFXButton fx:id="finishBtn" layoutX="232.0" layoutY="387.0" onMouseClicked="#closeStage" prefHeight="39.0" prefWidth="122.0" text="OK" />
+      <Line disable="true" endX="120.0" layoutX="323.0" layoutY="365.0" startX="-175.0" stroke="#d9d9d9" strokeWidth="0.7" />
+      <Label fx:id="headerLabel" alignment="CENTER" layoutX="97.0" layoutY="34.0" prefHeight="39.0" prefWidth="400.0" text="Casual Visit Receipt" />
+   </children>
+</AnchorPane>

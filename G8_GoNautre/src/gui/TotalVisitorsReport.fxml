@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="676.0" stylesheets="@../resources/projectTheme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="headerReport" layoutX="217.0" layoutY="14.0" text="Total Visitors Report" />
+      <Label layoutX="229.0" layoutY="134.0" text="Individual Visitors:" underline="true" />
+      <Label layoutX="229.0" layoutY="174.0" text="Organized Groups:" underline="true" />
+      <Label layoutX="229.0" layoutY="214.0" text="Subscribers:" underline="true" />
+      <Label layoutX="394.0" layoutY="94.0" style="-fx-font-weight: bold;" text="Total visitors: " underline="true" />
+      <Label fx:id="monthLabel" alignment="CENTER" layoutX="242.0" layoutY="53.0" prefHeight="20.0" prefWidth="213.0" text="Month" />
+      <Label fx:id="individualLabel" layoutX="423.0" layoutY="134.0" text="200" />
+      <Label fx:id="groupsLabel" layoutX="424.0" layoutY="174.0" text="200" />
+      <Label fx:id="subscribersLabel" layoutX="424.0" layoutY="214.0" text="200" />
+      <Label layoutX="229.0" layoutY="254.0" text="Total:" underline="true" />
+      <Label fx:id="totalLabel" layoutX="424.0" layoutY="254.0" text="200" />
+      <Label layoutX="229.0" layoutY="94.0" style="-fx-font-weight: bold;" text="Type:" underline="true" />
+      <ImageView fitHeight="84.0" fitWidth="71.0" layoutX="563.0" layoutY="752.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-2.0">
+         <image>
+            <Image url="@../../../../../Desktop/project%20%20stuff/דוחות/visitorsReport.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="sendToManagerBtn" layoutX="230.0" layoutY="797.0" text="Send To Department Manager" />
+      <JFXTextArea fx:id="commentTextArea" labelFloat="true" layoutX="230.0" layoutY="693.0" prefHeight="88.0" prefWidth="239.0" promptText="Add Comments (Optional)" />
+      <Label layoutX="315.0" layoutY="658.0" text="Comments:" underline="true" />
+      <BarChart fx:id="barChart" layoutX="17.0" layoutY="304.0" prefHeight="338.0" prefWidth="627.0" title="Days Distribution">
+        <xAxis>
+          <CategoryAxis label="Day Of The Week" side="BOTTOM" fx:id="xAxis" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="yAxis" label="Visitors Number" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Line endX="-282.0" endY="193.0" layoutX="283.0" layoutY="-109.0" opacity="0.19" startX="408.0" startY="192.99998474121094" stroke="WHITE" strokeWidth="1.5" />
+      <Line endX="-282.0" endY="193.0" layoutX="283.0" layoutY="102.0" opacity="0.19" startX="408.0" startY="193.0" stroke="WHITE" strokeWidth="1.5" />
+   </children>
+</AnchorPane>

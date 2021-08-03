@@ -1,0 +1,45 @@
+
+*{
+    -fx-primary : #2f3136;
+    -fx-primarytext : #d9d9d9;
+    -fx-red: #ff3d51;
+}
+
+/*Dialog styling*/
+.dialog-pane {
+    -fx-background-color: -fx-primary;
+    -fx-padding: 0;
+    -fx-fill: -fx-primarytext;
+    
+}
+
+.dialog-pane > .content.label {
+    -fx-text-fill: -fx-primarytext;
+}
+
+.dialog-pane:header .header-panel {
+	 /*-fx-background-color: -fx-primary;*/
+	-fx-background-color: -fx-box-border, -fx-primary;
+	/*-fx-background-color: -fx-box-border, linear-gradient(-fx-primary, derive(-fx-primary, 30%));*/
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-border-width: 0.0px 0.0px 1.0px 0.0px;
+    -fx-border-color: -fx-red;
+    /*-fx-border-color: -fx-primarytext;*/
+}
+
+.dialog-pane:header .header-panel .label {
+	-fx-font-weight: bold;
+    -fx-text-fill: -fx-red;
+}
+
+.alert.error.dialog-pane {
+    -fx-text-fill: -fx-primarytext;
+}
+
+.dialog-pane > .button-bar > .container {
+    -fx-background-color: -fx-primary;
+}
+
+.alert.error.dialog-pane {
+     /* -fx-graphic: url("/resources/images/dialog-error.png"); */
+}

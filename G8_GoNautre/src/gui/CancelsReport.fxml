@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="461.0" prefWidth="600.0" stylesheets="@../resources/projectTheme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="headerReport" layoutX="210.0" layoutY="14.0" text="Cancels Report" />
+      <Label layoutX="185.0" layoutY="169.0" text="Ardent Park:" underline="true" />
+      <Label layoutX="184.0" layoutY="214.0" text="Pine Park:" underline="true" />
+      <Label layoutX="184.0" layoutY="259.0" text="Linda Park:" underline="true" />
+      <Label layoutX="365.0" layoutY="124.0" style="-fx-font-weight: bold;" text="Cancels:" underline="true" />
+      <Label fx:id="monthLabel" layoutX="284.0" layoutY="53.0" text="Month" />
+      <Label fx:id="ardentParkCancelsLabel" layoutX="378.0" layoutY="169.0" prefHeight="20.0" prefWidth="22.0" text="200" />
+      <Label fx:id="pineParkCancelsLabel" layoutX="379.0" layoutY="214.0" text="200" />
+      <Label fx:id="lindaParkCancelsLabel" layoutX="379.0" layoutY="259.0" text="200" />
+      <Label layoutX="184.0" layoutY="304.0" text="Total:" underline="true" />
+      <Label fx:id="totalLabel" layoutX="379.0" layoutY="304.0" text="200" />
+      <Label layoutX="186.0" layoutY="124.0" style="-fx-font-weight: bold;" text="Park Name:" underline="true" />
+      <ImageView fitHeight="88.0" fitWidth="129.0" layoutX="480.0" layoutY="373.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/cancelReport.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="222.0" layoutY="398.0" onMouseClicked="#saveReportAsPdf" text="Save Report Locally" />
+   </children>
+</AnchorPane>

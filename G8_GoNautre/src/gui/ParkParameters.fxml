@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="@../resources/projectTheme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="headerLabel" layoutX="350.0" layoutY="50.0" text="Park Parameters" AnchorPane.leftAnchor="347.0" AnchorPane.rightAnchor="347.0" />
+      <Label layoutX="385.0" layoutY="132.0" text="Current Visitors:" />
+      <Label fx:id="currentLabel" layoutX="508.0" layoutY="132.0" text="0" />
+      <Label layoutX="385.0" layoutY="182.0" text="Max Visitors:" />
+      <Label fx:id="maxLabel" layoutX="508.0" layoutY="182.0" text="0" />
+      <Label layoutX="385.0" layoutY="232.0" text="Allowed Gap:" />
+      <Label fx:id="allowedLabel" layoutX="508.0" layoutY="232.0" text="0" />
+      <Label layoutX="385.0" layoutY="282.0" text="Place In Park:" />
+      <Label fx:id="actualLabel" layoutX="508.0" layoutY="282.0" text="0" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="375.0" layoutY="355.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/parameters.png" />
+         </image>
+      </ImageView>
+      <JFXComboBox fx:id="parkComboBox" layoutX="127.0" layoutY="212.0" prefHeight="30.0" prefWidth="140.0" promptText="Park:" />
+      <Label fx:id="chooseParkLabel" layoutX="150.0" layoutY="192.0" text="Choose Park:" />
+   </children>
+</AnchorPane>

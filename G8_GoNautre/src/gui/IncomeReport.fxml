@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="676.0" stylesheets="@../resources/projectTheme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="headerReport" layoutX="249.0" layoutY="14.0" text="Income Report" />
+      <Label layoutX="223.0" layoutY="137.0" text="Individual Visitors:" underline="true" />
+      <Label layoutX="222.0" layoutY="175.0" text="Organized Groups:" underline="true" />
+      <Label layoutX="222.0" layoutY="213.0" text="Subscribers:" underline="true" />
+      <Label layoutX="401.0" layoutY="99.0" style="-fx-font-weight: bold;" text="Income: " underline="true" />
+      <Label fx:id="monthLabel" layoutX="320.0" layoutY="55.0" text="Month" />
+      <Label fx:id="individualLabel" layoutX="416.0" layoutY="137.0" text="200" />
+      <Label fx:id="groupsLabel" layoutX="417.0" layoutY="175.0" text="200" />
+      <Label fx:id="subscribersLabel" layoutX="417.0" layoutY="213.0" text="200" />
+      <Label layoutX="222.0" layoutY="251.0" text="Total:" underline="true" />
+      <Label fx:id="totalLabel" layoutX="417.0" layoutY="251.0" text="200" />
+      <Label layoutX="224.0" layoutY="99.0" style="-fx-font-weight: bold;" text="Type:" underline="true" />
+      <ImageView fitHeight="68.0" fitWidth="67.0" layoutX="564.0" layoutY="783.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0">
+         <image>
+            <Image url="@../resources/images/income.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="sendToManagerBtn" layoutX="219.0" layoutY="801.0" text="Send To Department Manager" />
+      <JFXTextArea fx:id="commentTextArea" labelFloat="true" layoutX="219.0" layoutY="676.0" prefHeight="108.0" prefWidth="239.0" promptText="Add Comments (Optional)" />
+      <Label layoutX="303.0" layoutY="639.0" text="Comments:" underline="true" />
+      <BarChart fx:id="barChart" layoutX="20.0" layoutY="298.0" prefHeight="338.0" prefWidth="627.0" title="Days Distribution">
+         <xAxis>
+            <CategoryAxis label="Day Of The Week" side="BOTTOM" fx:id="xAxis" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis fx:id="yAxis" label="Income" side="LEFT" />
+         </yAxis>
+      </BarChart>
+      <Line endX="-282.0" endY="193.0" layoutX="280.0" layoutY="-104.0" opacity="0.19" startX="408.0" startY="192.99998474121094" stroke="WHITE" strokeWidth="1.5" />
+      <Line endX="-282.0" endY="193.0" layoutX="282.0" layoutY="95.0" opacity="0.19" startX="408.0" startY="193.0" stroke="WHITE" strokeWidth="1.5" />
+   </children>
+</AnchorPane>

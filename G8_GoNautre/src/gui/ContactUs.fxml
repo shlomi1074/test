@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="824.0" stylesheets="@../resources/projectTheme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ContactUsController">
+   <children>
+      <AnchorPane fx:id="ourConcactsPane" minHeight="0.0" minWidth="0.0" prefHeight="559.0" prefWidth="324.0" style="-fx-background-color: #4b4f97;">
+         <children>
+            <Label layoutX="50.0" layoutY="437.0" text="To register as subscriber call:  *3636" />
+            <Label layoutX="52.0" layoutY="472.0" text="For general help call:  *3637" />
+            <Label fx:id="emailLabel" layoutX="53.0" layoutY="504.0" text="support@goNature.com" textAlignment="CENTER" />
+            <Label layoutX="25.0" layoutY="24.0" style="-fx-font-weight: bold;" text="Our contacts" />
+            <FontAwesomeIconView glyphName="PHONE" layoutX="23.0" layoutY="455.0" size="14.0" />
+            <FontAwesomeIconView glyphName="PHONE" layoutX="22.0" layoutY="488.0" size="14.0" />
+            <FontAwesomeIconView glyphName="ENVELOPE" layoutX="22.0" layoutY="522.0" size="14.0" text="" />
+            <ImageView fitHeight="211.0" fitWidth="210.0" layoutX="57.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/images/LOGO%20(2).png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="emailPane" layoutX="324.0" minHeight="0.0" minWidth="0.0" prefHeight="559.0" prefWidth="514.0">
+         <children>
+            <Label layoutX="25.0" layoutY="24.0" style="-fx-font-weight: bold;" text="Send us a message" />
+            <JFXTextArea fx:id="textArea" layoutX="54.0" layoutY="229.0" prefHeight="224.0" prefWidth="394.0" promptText="Write your meesage here" />
+            <JFXButton fx:id="sendButton" layoutX="50.0" layoutY="487.0" onMouseClicked="#sendEmailBtn" prefHeight="40.0" prefWidth="402.0" text="SEND" />
+            <JFXTextField fx:id="nameTextField" layoutX="74.0" layoutY="59.0" prefHeight="37.0" prefWidth="170.0" promptText="Your name" />
+            <JFXTextField fx:id="phoneTextField" layoutX="298.0" layoutY="59.0" prefHeight="37.0" prefWidth="170.0" promptText="Your phone" />
+            <JFXTextField fx:id="emailTextField" layoutX="74.0" layoutY="119.0" prefHeight="37.0" prefWidth="394.0" promptText="Email address" />
+            <FontAwesomeIconView glyphName="PHONE" layoutX="261.0" layoutY="91.0" size="25" />
+            <FontAwesomeIconView glyphName="ENVELOPE" layoutX="34.0" layoutY="148.0" size="25" />
+            <FontAwesomeIconView glyphName="USER" layoutX="38.0" layoutY="89.0" size="25" />
+            <JFXTextField fx:id="subjectLabel" layoutX="74.0" layoutY="181.0" prefHeight="30.0" prefWidth="394.0" promptText="Subject" />
+            <FontAwesomeIconView glyphName="COMMENTING_ALT" layoutX="34.0" layoutY="204.0" size="25" />
+            <FontAwesomeIconView glyphName="SEND_ALT" layoutX="199.0" layoutY="515.0" size="25" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

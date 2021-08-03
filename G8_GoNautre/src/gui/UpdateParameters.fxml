@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="updateParametersRootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="@../resources/projectTheme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <children>
+      <Accordion fx:id="accordion" layoutX="185.0" layoutY="97.0" prefHeight="439.0" prefWidth="531.0">
+         <panes>
+            <TitledPane fx:id="maxVisitorsTP" animated="false" expanded="false" text="UPDATE MAX VISITORS">
+               <content>
+                  <AnchorPane fx:id="identificationAP" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="529.0">
+                     <children>
+                        <JFXTextField fx:id="newMaxVisitorsTextField" alignment="CENTER" layoutX="146.0" layoutY="218.0" prefHeight="37.0" prefWidth="239.0" promptText="Enter New Max Visitors" />
+                        <Label layoutX="212.0" layoutY="182.0" text="Enter Max Visitors" />
+                        <FontAwesomeIconView glyphName="LINE_CHART" layoutX="235.0" layoutY="150.0" size="50" />
+                     </children>
+                  </AnchorPane>
+               </content>
+               <graphic>
+                  <FontAwesomeIconView glyphName="LINE_CHART" size="15" />
+               </graphic>
+            </TitledPane>
+            <TitledPane fx:id="estimatedTimeTP" animated="false" text="UPDATE ESTIMATED STAY TIME">
+               <content>
+                  <AnchorPane fx:id="informationAP" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXTextField fx:id="newEsitimatedTIme" alignment="CENTER" layoutX="145.0" layoutY="218.0" prefHeight="37.0" prefWidth="239.0" promptText="Enter New Estimated Stay Time" />
+                        <Label layoutX="188.0" layoutY="182.0" text="Enter Estimated Stay Time" />
+                        <FontAwesomeIconView glyphName="HOURGLASS_HALF" layoutX="243.0" layoutY="151.0" size="50" />
+                     </children>
+                  </AnchorPane>
+               </content>
+               <graphic>
+                  <FontAwesomeIconView glyphName="HOURGLASS_HALF" size="15" />
+               </graphic>
+            </TitledPane>
+            <TitledPane fx:id="gapTP" animated="false" text="UPDATE GAP">
+               <content>
+                  <AnchorPane fx:id="paymentAP" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" visible="false">
+                     <children>
+                        <JFXTextField fx:id="gapTextField" alignment="CENTER" layoutX="145.0" layoutY="218.0" prefHeight="37.0" prefWidth="239.0" promptText="Enter New Gap" />
+                        <Label layoutX="234.0" layoutY="182.0" text="Enter Gap:" />
+                        <FontAwesomeIconView glyphName="CUBES" layoutX="232.0" layoutY="150.0" size="50" />
+                     </children>
+                  </AnchorPane>
+               </content>
+               <graphic>
+                  <FontAwesomeIconView glyphName="CUBES" size="15" />
+               </graphic>
+            </TitledPane>
+            <TitledPane fx:id="discountTP" animated="false" text="CREATE DISCOUNT">
+              <content>
+                <AnchorPane fx:id="discountAP" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXTextField fx:id="discountPercentage" layoutX="264.0" layoutY="239.0" prefHeight="30.0" prefWidth="180.0" promptText="Enter Percentage" />
+                        <Label layoutX="80.0" layoutY="154.0" text="Enter Start Date" />
+                        <Label layoutX="80.0" layoutY="199.0" text="Enter End Date" />
+                        <Label layoutX="80.0" layoutY="244.0" text="Enter Discount Percentage" />
+                        <FontAwesomeIconView glyphName="PERCENT" layoutX="233.0" layoutY="111.0" size="50" text="" />
+                        <JFXDatePicker fx:id="discountStartDate" layoutX="264.0" layoutY="149.0" promptText="Start Date" />
+                        <JFXDatePicker fx:id="discountEndDate" layoutX="264.0" layoutY="194.0" promptText="End Date" />
+                     </children>
+                  </AnchorPane>
+              </content>
+               <graphic>
+                  <FontAwesomeIconView glyphName="PERCENT" size="15" />
+               </graphic>
+            </TitledPane>
+         </panes>
+      </Accordion>
+      <Label fx:id="headerLabel" layoutX="337.0" layoutY="22.0" text="Update Parameters" />
+      <JFXButton fx:id="sendForApprovealButton" layoutX="360.0" layoutY="547.0" onMouseClicked="#sendForApprovealButton" text="SEND FOR APPROVAL" />
+   </children>
+</AnchorPane>

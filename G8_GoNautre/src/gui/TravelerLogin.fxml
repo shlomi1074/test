@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" stylesheets="@../resources/projectTheme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle fx:id="rectangle" arcHeight="20.0" arcWidth="20.0" fill="#f5f5f500" height="352.0" layoutX="54.0" layoutY="95.0" stroke="#ebebebcb" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="2.0" width="392.0" />
+      <Label layoutX="145.0" layoutY="145.0" style="-fx-font-size: 24; -fx-font-weight: bold; -fx-text-fill: white; -fx-opacity: 0.8; -fx-font-family: &quot;Lucida Console&quot;, Courier, monospace;" text="TRAVELER LOGIN" textAlignment="CENTER" />
+      <ImageView fitHeight="80.0" fitWidth="105.0" layoutX="210.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/forest.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="45.0" layoutX="293.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/plant.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="forgotPasswordLabel1" layoutX="120.0" layoutY="459.0" style="-fx-text-fill: white; -fx-opacity: 0.8; -fx-font-size: 14;" text="Not a subscriber yet? Contect us at phone" />
+      <Label layoutX="241.0" layoutY="261.0" text="OR" textAlignment="CENTER" textFill="#ffffffe7">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="idTextField" layoutX="143.0" layoutY="186.0" prefHeight="55.0" prefWidth="265.0" promptText="ID" />
+      <JFXTextField fx:id="subscriberIDTextField" layoutX="143.0" layoutY="288.0" prefHeight="55.0" prefWidth="265.0" promptText="Subscriber Number" />
+      <FontAwesomeIconView glyphName="ADDRESS_CARD" layoutX="84.0" layoutY="336.0" size="40" />
+      <JFXButton fx:id="loginButton" layoutX="87.0" layoutY="370.0" prefHeight="55.0" prefWidth="327.0" text="LOGIN" />
+      <FontAwesomeIconView glyphName="ID_CARD_ALT" layoutX="84.0" layoutY="227.0" size="40" />
+   </children>
+</AnchorPane>
